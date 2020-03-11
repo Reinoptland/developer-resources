@@ -83,9 +83,9 @@ STEPS:
   - X Build a selector (export it)
   - X Import the selector
   - X Use selector in component
-- gather data (console.log state)
-- Return data from the selector
-- map over the array of developers in your component
+- X gather data (console.log state)
+- X Return data from the selector
+- X map over the array of developers in your component
 
 DIY
 
