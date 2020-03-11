@@ -158,6 +158,11 @@ WHAT DO WE NEED TO DO, TO FETCH DEVELOPERS / RESOURCES?
 - X dispatch an action (with developers / resources as a payload)
 - store the response -> in the reduxState
 
+- import axios
+- make a request with axios,
+- dispatch an action resources as a payload
+- store the response -> in the reduxState
+
 # Later, Day 3
 
 - Routing together with redux
