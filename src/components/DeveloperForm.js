@@ -11,15 +11,26 @@ export default function DeveloperForm() {
     event.preventDefault();
     // console.log("DO WE HAVE DATA", name, url)
     dispatch(addDeveloper(name, url));
+    setUrl("");
+    setName("");
   }
   return (
     <div onSubmit={handleSubmit}>
       <h1>ADD DEV</h1>
       <form>
         <label>Name</label>
-        <input value={name} onChange={event => setName(event.target.value)} />
+        <input
+          required
+          value={name}
+          onChange={event => setName(event.target.value)}
+        />
         <label>Website Url</label>
-        <input value={url} onChange={event => setUrl(event.target.value)} />
+        <input
+          type="url"
+          pattern="https://.*"
+          value={url}
+          onChange={event => setUrl(event.target.value)}
+        />
         <input type="submit" />
       </form>
     </div>
