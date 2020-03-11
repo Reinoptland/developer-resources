@@ -141,9 +141,9 @@ WHAT DO WE NEED TO DO TO BE ABLE TO DELETE A DEVELOPER
 
 - X Data of who to delete -> id of the developer
 - X We need some UI (button or something) to delete someone
-- Wire the UI (event listeners and handlers)
-- Create an action
-- Dispatch that action
+- X Wire the UI (event listeners and handlers)
+- X Create an action
+- X Dispatch that action
 - handle action in reducer
 - ... -> delete them from the array of developers?? (what do we use)
 - Ask for confirmation?

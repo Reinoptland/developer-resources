@@ -1,14 +1,21 @@
 import React from "react";
 import { selectAllDevelopers } from "../store/developers/selectors";
 import { useSelector } from "react-redux";
+import { deleteDeveloper } from "../store/developers/actions";
+import { useDispatch } from "react-redux";
 
 export default function DeveloperList() {
   const developers = useSelector(selectAllDevelopers);
   //   console.log("DEVELOPERS IN COMPONENT", developers);
+  const dispatch = useDispatch();
 
-  function handleDelete(userId) {
-    console.log("DELETE USER", userId);
+  function handleDelete(developerId) {
+    // console.log("DELETE USER", developerId);
+    const action = deleteDeveloper(developerId);
+    // console.log(action);
+    dispatch(action);
   }
+
   return (
     <div>
       <ul>

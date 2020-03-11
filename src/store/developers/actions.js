@@ -9,3 +9,10 @@ export function addDeveloper(name, url) {
     }
   };
 }
+
+export function deleteDeveloper(developerId) {
+  return {
+    type: "DELETE_DEVELOPER",
+    payload: developerId
+  };
+}
