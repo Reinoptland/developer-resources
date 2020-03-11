@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   selectDeveloperById,
   selectAllDevelopers
@@ -6,13 +6,15 @@ import {
 import { useSelector } from "react-redux";
 
 export default function DeveloperDetails() {
-  const developer = useSelector(selectDeveloperById(1));
+  const [chosenId, setChosenId] = useState(1);
+  const developer = useSelector(selectDeveloperById(chosenId));
   const allDevelopers = useSelector(selectAllDevelopers);
   console.log("DEVELOPER IN COMPONENT", developer);
   console.log("DEVELOPERS IN COMPONENT", allDevelopers);
-
+  console.log("ID USER WANTS TO SEE?", chosenId);
   function handleChange(event) {
-    console.log(typeof parseInt(event.target.value));
+    // console.log(typeof parseInt(event.target.value));
+    setChosenId(parseInt(event.target.value));
   }
   return (
     <div>
