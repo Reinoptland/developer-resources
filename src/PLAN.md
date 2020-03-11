@@ -61,6 +61,18 @@
   - DEMO: remove a developer from the state
   - You do: remove a resource from the state
 
+# Feature: Display Developers
+
+STEPS:
+
+- hardcode state
+- Create component
+- Build a selector (export it)
+  - gather data (console.log state)
+- Import the selector
+- Use selector in component
+- map over the array of developers in your component
+
 # Later, Day 3
 
 - Routing together with redux
