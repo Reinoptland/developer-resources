@@ -80,7 +80,7 @@ STEPS:
 - X hardcode state
 - X Create component
 - Get selector to run
-  - Build a selector (export it)
+  - X Build a selector (export it)
   - Import the selector
   - Use selector in component
 - gather data (console.log state)
