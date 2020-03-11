@@ -123,7 +123,7 @@ WHAT DO WE NEED TO DO TO BE ABLE TO ADD A DEVELOPER?
 
 - X We need a form
 - X We need to store the state of the form (useState)
-- When the form is submitted, dispatch an action
+- X When the form is submitted, dispatch an action
 - In the reducer, handle the action
 
 # Later, Day 3

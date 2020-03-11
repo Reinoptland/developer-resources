@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { addDeveloper } from "../store/developers/actions";
 
 export default function DeveloperForm() {
   const [name, setName] = useState("");
@@ -8,22 +9,8 @@ export default function DeveloperForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
-
-    // console.log("DO WE HAVE DATA", name, url);
-    function addDeveloper(name, url) {
-      return {
-        type: "ADD_DEVELOPER",
-        payload: {
-          id: Math.round(Math.random() * 1000000),
-          name: name,
-          url: url,
-          favorites: []
-        }
-      };
-    }
-    const action = addDeveloper(name, url);
-
-    dispatch(action);
+    // console.log("DO WE HAVE DATA", name, url)
+    dispatch(addDeveloper(name, url));
   }
   return (
     <div onSubmit={handleSubmit}>
