@@ -1,31 +1,22 @@
 import React from "react";
+import { selectAllDevelopers } from "../store/developers/selectors";
 import { useSelector } from "react-redux";
-import {
-  selectDevelopers,
-  selectDevelopersWithFavorite
-} from "../store/developers/selectors";
-
-// What do I need to import to take state from redux and
-// put it into my App component?
-// - useSelector (from react redux)
-// - selector function store/developers/selectors
 
 export default function DeveloperList() {
-  const developersWithThisFavorite = useSelector(
-    selectDevelopersWithFavorite(2)
-  );
-
-  //   console.log(developersWithThisFavorite);
-
-  const developers = useSelector(selectDevelopers);
-
+  const developers = useSelector(selectAllDevelopers);
+  console.log("DEVELOPERS IN COMPONENT", developers);
   return (
     <div>
-      {developers.map(developer => (
-        <div key={developer.id}>
-          <h2>{developer.name}</h2>
-        </div>
-      ))}
+      <ul>
+        {developers.map(developer => {
+          console.log(developer);
+          return (
+            <li>
+              Name: {developer.name}, <a href={developer.website}>Website </a>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

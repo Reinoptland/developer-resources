@@ -18,7 +18,7 @@ export default function ResourcesList() {
   //   console.log(tags);
   //   console.log("WHAT TAG", tagUserWantsToSee);
   //   console.log("WHAT RESOURCES:", resourcesWithTag);
-  console.log(selectDeveloperStatistics);
+  // console.log(selectDeveloperStatistics);
   return (
     <div>
       <h2>View libraries with a specific tag:</h2>

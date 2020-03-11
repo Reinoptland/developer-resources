@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import DeveloperList from "./components/DeveloperList";
 import ResourcesList from "./components/ResourcesList";
+import DeveloperList from "./components/DeveloperList";
 
 function App() {
   return (
