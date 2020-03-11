@@ -1,3 +1,9 @@
+export function selectAllResources(reduxState) {
+  // console.log("STATE IN SELECTOR", reduxState.resources);
+  // TODO: return a piece of the state
+  return reduxState.resources;
+}
+
 // TODO
 // write a selector that has a tag as an input
 // and it selects all resources that include that tag
