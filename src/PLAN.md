@@ -122,7 +122,7 @@ WHAT DO WE NEED TO DO, TO MAKE A SELECT INPUT WITH DEVELOPER ID's?
 WHAT DO WE NEED TO DO TO BE ABLE TO ADD A DEVELOPER?
 
 - X We need a form
-- We need to store the state of the form (useState)
+- X We need to store the state of the form (useState)
 - When the form is submitted, dispatch an action
 - In the reducer, handle the action
 
