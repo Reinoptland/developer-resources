@@ -73,7 +73,7 @@ STEPS:
   - X Use selector in component
 - X gather data (console.log state)
 - X Return data from the selector
-- map over the array of developers in your component
+- X map over the array of developers in your component
 
 # Later, Day 3
 

@@ -5,5 +5,18 @@ import { useSelector } from "react-redux";
 export default function DeveloperList() {
   const developers = useSelector(selectAllDevelopers);
   console.log("DEVELOPERS IN COMPONENT", developers);
-  return <div>LIST</div>;
+  return (
+    <div>
+      <ul>
+        {developers.map(developer => {
+          console.log(developer);
+          return (
+            <li>
+              Name: {developer.name}, <a href={developer.website}>Website </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
 }
