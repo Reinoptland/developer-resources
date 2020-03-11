@@ -11,6 +11,10 @@ export default function DeveloperDetails() {
         Name: {developer.name}{" "}
         {developer.website ? <a href={developer.website}>Website</a> : null}
       </h4>
+      <select>
+        <option defaultValue>Select one</option>
+        <option>Irene</option>
+      </select>
     </div>
   );
 }
