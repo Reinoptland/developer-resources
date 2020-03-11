@@ -103,6 +103,20 @@ STEPS:
 - Make the user be able choose (make the data dynamic)
   - Make a select input etc..
 
+WHAT DO WE NEED TO DO, TO MAKE A SELECT INPUT WITH DEVELOPER ID's?
+
+- Making a select input
+- Harcode an option
+- Dynamic options
+  - We need data for developers
+  - Make a selector for developers and use it (or reuse one)
+  - Map over developers to create the options
+- Listen to what the user selected and get and Id
+  - Onchange listener
+  - Store which id the user wants to see using useState
+  - An event handler
+- Pass the id the user selected to our selectDeveloperById (so everything is dynamic)
+
 # Later, Day 3
 
 - Routing together with redux
