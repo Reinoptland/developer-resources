@@ -105,11 +105,11 @@ STEPS:
 
 WHAT DO WE NEED TO DO, TO MAKE A SELECT INPUT WITH DEVELOPER ID's?
 
-- Making a select input
-- Harcode an option
+- X Making a select input
+- X Harcode an option
 - Dynamic options
-  - We need data for developers
-  - Make a selector for developers and use it (or reuse one)
+  - X We need data for developers
+  - X Make a selector for developers and use it (or **reuse** one)
   - Map over developers to create the options
 - Listen to what the user selected and get and Id
   - Onchange listener
