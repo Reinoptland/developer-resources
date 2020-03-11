@@ -19,8 +19,7 @@ function App() {
         <DeveloperList />
         <DeveloperDetails />
         <DeveloperForm />
-        {/* 
-        <ResourcesListByTag /> */}
+        {/* <ResourcesListByTag /> */}
       </header>
     </div>
   );

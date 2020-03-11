@@ -16,5 +16,12 @@ export function fetchResourcesSuccess(resources) {
   return {
     type: "RESOURCES_FETCHED",
     payload: resources
+  }
+}
+
+export function deleteResource(resourceId) {
+  return {
+    type: "DELETE_RESOURCE",
+    payload: resourceId
   };
 }
