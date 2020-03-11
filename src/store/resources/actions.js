@@ -1,5 +1,5 @@
 // ACTION CREATOR
-export function addResource(name, type, url) {
+export function addResource(name, type, url, tags) {
   return {
     type: "ADD_RESOURCE",
     payload: {
@@ -7,7 +7,7 @@ export function addResource(name, type, url) {
       name: name,
       type: type,
       url: url,
-      tags: []
+      tags: tags.split(",")
     }
   };
 }

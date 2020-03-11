@@ -6,14 +6,19 @@ export default function ResourceForm() {
   const [name, setName] = useState("");
   const [type, setType] = useState("");
   const [url, setUrl] = useState("");
+  const [tags, setTags] = useState("");
   const dispatch = useDispatch();
 
   function handleSubmit(event) {
     event.preventDefault();
 
-    const action = addResource(name, type, url);
-    console.log(action);
+    const action = addResource(name, type, url, tags);
+    // console.log(action);
     dispatch(action); // we should get an action
+    setTags("");
+    setName("");
+    setType("");
+    setUrl("");
   }
 
   return (
@@ -21,11 +26,26 @@ export default function ResourceForm() {
       <h1>Add a resource</h1>
       <form onSubmit={handleSubmit}>
         <label>Name</label>
-        <input value={name} onChange={event => setName(event.target.value)} />
+        <input
+          required
+          value={name}
+          onChange={event => setName(event.target.value)}
+        />
         <label>type</label>
-        <input value={type} onChange={event => setType(event.target.value)} />
+        <input
+          required
+          value={type}
+          onChange={event => setType(event.target.value)}
+        />
         <label>url</label>
-        <input value={url} onChange={event => setUrl(event.target.value)} />
+        <input
+          type="url"
+          pattern="https://.*"
+          value={url}
+          onChange={event => setUrl(event.target.value)}
+        />
+        <label>tags (seperate with commas) </label>
+        <input value={tags} onChange={event => setTags(event.target.value)} />
         <input type="submit" />
       </form>
     </div>
