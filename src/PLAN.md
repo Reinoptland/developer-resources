@@ -77,6 +77,16 @@ STEPS:
 
 # Feature: Display all resources and their websites
 
+- hardcode state
+- Create component
+- Get selector to run
+  - Build a selector (export it)
+  - Import the selector
+  - Use selector in component
+- gather data (console.log state)
+- Return data from the selector
+- map over the array of developers in your component
+
 DIY
 
 # Later, Day 3
