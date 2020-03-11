@@ -75,6 +75,10 @@ STEPS:
 - X Return data from the selector
 - X map over the array of developers in your component
 
+# Feature: Display all resources and their websites
+
+DIY
+
 # Later, Day 3
 
 - Routing together with redux
