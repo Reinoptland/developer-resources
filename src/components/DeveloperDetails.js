@@ -10,13 +10,17 @@ export default function DeveloperDetails() {
   const allDevelopers = useSelector(selectAllDevelopers);
   console.log("DEVELOPER IN COMPONENT", developer);
   console.log("DEVELOPERS IN COMPONENT", allDevelopers);
+
+  function handleChange(event) {
+    console.log(typeof parseInt(event.target.value));
+  }
   return (
     <div>
       <h4>
         Name: {developer.name}{" "}
         {developer.website ? <a href={developer.website}>Website</a> : null}
       </h4>
-      <select>
+      <select onChange={handleChange}>
         <option defaultValue>Select one</option>
         {allDevelopers.map(developer => {
           return (
