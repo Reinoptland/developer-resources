@@ -4,6 +4,11 @@ function average(numbers) {
   return numbers.reduce((a, b) => a + b, 0) / numbers.length;
 }
 
+export function selectAllDevelopers(reduxState) {
+  // console.log("STATE IN SELECTOR", reduxState.developers);
+  return reduxState.developers;
+}
+
 export const selectDeveloperStatistics = state => {
   return {
     num: state.developers.length,

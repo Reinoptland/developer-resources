@@ -66,11 +66,13 @@
 STEPS:
 
 - X hardcode state
-- Create component
-- Build a selector (export it)
-  - gather data (console.log state)
-- Import the selector
-- Use selector in component
+- X Create component
+- Get selector to run
+  - X Build a selector (export it)
+  - X Import the selector
+  - X Use selector in component
+- X gather data (console.log state)
+- X Return data from the selector
 - map over the array of developers in your component
 
 # Later, Day 3
