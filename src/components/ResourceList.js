@@ -18,6 +18,7 @@ export default function ResourceList() {
               name={resource.name}
               type={resource.type}
               url={resource.url}
+              id={resource.id}
             />
           );
         })}

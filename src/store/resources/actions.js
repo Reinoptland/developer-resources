@@ -11,3 +11,10 @@ export function addResource(name, type, url, tags) {
     }
   };
 }
+
+export function deleteResource(resourceId) {
+  return {
+    type: "DELETE_RESOURCE",
+    payload: resourceId
+  };
+}
