@@ -1,10 +1,12 @@
+import { useSelector } from "react-redux";
+
 function average(numbers) {
   return numbers.reduce((a, b) => a + b, 0) / numbers.length;
 }
 
-export const selectDevelopers = state => {
+export const selectDevelopers = reduxState => {
   //   console.log("Oh hi?");
-  return state.developers;
+  return reduxState.developers;
 };
 
 export const selectDeveloperStatistics = state => {
