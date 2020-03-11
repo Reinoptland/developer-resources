@@ -18,7 +18,13 @@ export default function DeveloperDetails() {
       </h4>
       <select>
         <option defaultValue>Select one</option>
-        <option>Irene</option>
+        {allDevelopers.map(developer => {
+          return (
+            <option value={developer.id} key={developer.id}>
+              {developer.name}
+            </option>
+          );
+        })}
       </select>
     </div>
   );

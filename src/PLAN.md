@@ -110,7 +110,7 @@ WHAT DO WE NEED TO DO, TO MAKE A SELECT INPUT WITH DEVELOPER ID's?
 - Dynamic options
   - X We need data for developers
   - X Make a selector for developers and use it (or **reuse** one)
-  - Map over developers to create the options
+  - X Map over developers to create the options
 - Listen to what the user selected and get and Id
   - Onchange listener
   - Store which id the user wants to see using useState
