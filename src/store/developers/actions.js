@@ -16,3 +16,10 @@ export function deleteDeveloper(developerId) {
     payload: developerId
   };
 }
+
+export function developersFetchedSuccess(developers) {
+  return {
+    type: "DEVELOPERS_FETCHED",
+    payload: developers
+  };
+}

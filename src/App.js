@@ -15,10 +15,11 @@ function App() {
         <ResourceList />
         <ResourceForm />
         <ResourceDetails />
-        {/* <DeveloperList />
-        <DeveloperDetails /> */}
-        {/*  <DeveloperForm /> 
-        <ResourcesListByTag /> */}
+        <hr></hr>
+        <DeveloperList />
+        <DeveloperDetails />
+        <DeveloperForm />
+        {/* <ResourcesListByTag /> */}
       </header>
     </div>
   );
