@@ -15,7 +15,7 @@ function App() {
         {/* <ResourceForm />
         <ResourceList /> */}
         <DeveloperList />
-        <DeveloperDetails />
+        {/* <DeveloperDetails /> */}
         {/* <DeveloperForm /> */}
         {/* <ResourceDetails />
         <ResourcesListByTag /> */}

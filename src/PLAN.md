@@ -148,6 +148,16 @@ WHAT DO WE NEED TO DO TO BE ABLE TO DELETE A DEVELOPER
 - ... -> delete them from the array of developers?? (what do we use)
 - Ask for confirmation?
 
+# Fetching from api
+
+WHAT DO WE NEED TO DO, TO FETCH DEVELOPERS / RESOURCES?
+
+- install **axios** / request library / use fetch
+- import axios
+- make a request with axios,
+- dispatch an action (with developers / resources as a payload)
+- store the response -> in the reduxState
+
 # Later, Day 3
 
 - Routing together with redux
