@@ -16,14 +16,14 @@ export default function DeveloperList() {
       const response = await axios.get(
         "http://my-json-server.typicode.com/Reinoptland/developer-resources/developers"
       );
-      console.log(response.data);
+      // console.log(response.data);
       const action = developersFetchedSuccess(response.data);
-      console.log(action);
+      // console.log(action);
       dispatch(action);
     }
 
     fetchDevelopers();
-  }, []);
+  }, [dispatch]);
 
   const developers = useSelector(selectAllDevelopers);
   //   console.log("DEVELOPERS IN COMPONENT", developers);

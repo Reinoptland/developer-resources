@@ -14,15 +14,15 @@ export default function ResourceList() {
       const response = await axios.get(
         "http://my-json-server.typicode.com/Reinoptland/developer-resources/resources"
       );
-      console.log(response);
+      // console.log(response);
 
       const action = fetchResourcesSuccess(response.data);
-      console.log(action);
+      // console.log(action);
       dispatch(action);
     }
 
     fetchResources();
-  }, []);
+  }, [dispatch]);
   return (
     <div>
       RESOURCES

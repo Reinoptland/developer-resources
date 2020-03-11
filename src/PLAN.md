@@ -163,6 +163,25 @@ WHAT DO WE NEED TO DO, TO FETCH DEVELOPERS / RESOURCES?
 - dispatch an action resources as a payload
 - store the response -> in the reduxState
 
+# TAKE AWAY:
+
+SELECTORS
+
+- Logic about what data a component needs to function
+
+ACTION CREATORS
+
+- If you have logic about what the user did, it belongs in an actioncreator
+
+COMPONENTS
+
+- If you have logic of how to display something (buttons / yes no)
+- how to interact with the user
+
+REDUCER
+
+- If you have logic of how a user changes the data in your app
+
 # Later, Day 3
 
 - Routing together with redux
