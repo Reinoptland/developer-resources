@@ -126,6 +126,15 @@ WHAT DO WE NEED TO DO TO BE ABLE TO ADD A DEVELOPER?
 - X When the form is submitted, dispatch an action
 - In the reducer, handle the action
 
+# Feature: Add a resource
+
+WHAT DO WE NEED TO DO TO BE ABLE TO ADD A DEVELOPER?
+
+- We need a form
+- We need to store the state of the form (useState)
+- When the form is submitted, dispatch an action
+- In the reducer, handle the action
+
 # Later, Day 3
 
 - Routing together with redux
