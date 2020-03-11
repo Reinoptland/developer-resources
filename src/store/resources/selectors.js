@@ -1,6 +1,7 @@
 export function selectAllResources(reduxState) {
-  console.log("STATE IN SELECTOR", reduxState);
+  console.log("STATE IN SELECTOR", reduxState.resources);
   // TODO: return a piece of the state
+  return reduxState.resources;
 }
 
 // TODO
