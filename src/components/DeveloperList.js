@@ -1,24 +1,31 @@
 import React, { useEffect } from "react";
 import { selectAllDevelopers } from "../store/developers/selectors";
 import { useSelector } from "react-redux";
-import { deleteDeveloper } from "../store/developers/actions";
+import {
+  deleteDeveloper,
+  developersFetchedSuccess
+} from "../store/developers/actions";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 
 export default function DeveloperList() {
+  const dispatch = useDispatch();
+
   useEffect(() => {
     async function fetchDevelopers() {
       const response = await axios.get(
         "http://my-json-server.typicode.com/Reinoptland/developer-resources/developers"
       );
       console.log(response.data);
+      const action = developersFetchedSuccess(response.data);
+      console.log(action);
+      dispatch(action);
     }
 
     fetchDevelopers();
   }, []);
 
   const developers = useSelector(selectAllDevelopers);
-  const dispatch = useDispatch();
   //   console.log("DEVELOPERS IN COMPONENT", developers);
 
   function handleDelete(developerId) {

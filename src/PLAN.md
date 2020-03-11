@@ -152,10 +152,10 @@ WHAT DO WE NEED TO DO TO BE ABLE TO DELETE A DEVELOPER
 
 WHAT DO WE NEED TO DO, TO FETCH DEVELOPERS / RESOURCES?
 
-- install **axios** / request library / use fetch
-- import axios
-- make a request with axios,
-- dispatch an action (with developers / resources as a payload)
+- X install **axios** / request library / use fetch
+- X import axios
+- X make a request with axios,
+- X dispatch an action (with developers / resources as a payload)
 - store the response -> in the reduxState
 
 # Later, Day 3
