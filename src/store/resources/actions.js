@@ -11,3 +11,10 @@ export function addResource(name, type, url, tags) {
     }
   };
 }
+
+export function fetchResourcesSuccess(resources) {
+  return {
+    type: "RESOURCES_FETCHED",
+    payload: resources
+  };
+}
