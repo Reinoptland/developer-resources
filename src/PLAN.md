@@ -65,7 +65,7 @@
 
 STEPS:
 
-- hardcode state
+- X hardcode state
 - Create component
 - Build a selector (export it)
   - gather data (console.log state)
