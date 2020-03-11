@@ -17,7 +17,7 @@ export default function DeveloperDetails() {
     setChosenId(parseInt(event.target.value));
   }
 
-  const details = chosenId ? (
+  const details = developer ? (
     <h4>
       Name: {developer.name}{" "}
       {developer.website ? <a href={developer.website}>Website</a> : null}
