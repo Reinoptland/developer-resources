@@ -4,7 +4,7 @@ export function addDeveloper(name, url) {
     payload: {
       id: Math.round(Math.random() * 1000000),
       name: name,
-      url: url,
+      website: url,
       favorites: []
     }
   };
