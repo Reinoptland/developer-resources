@@ -87,7 +87,21 @@ STEPS:
 - X Return data from the selector
 - X map over the array of developers in your component
 
-DIY
+# Feature: Display 1 developer with their details
+
+- name & website
+- X Check state, do we have the data? if not hardcode it
+- X Make a component to display 1 developer
+- Get a selector to run
+  - Build a selector (export it)
+  - Import the selector
+  - Use selector in component
+- gather data (console.log state)
+  - We need an id of which developer to display
+- Return data from the selector
+- Display that 1 developer
+- Make the user be able choose (make the data dynamic)
+  - Make a select input etc..
 
 # Later, Day 3
 

@@ -1,3 +1,10 @@
+// Parameterized Selector
+export function selectDeveloperById(developerId) {
+  return function(reduxState) {
+    console.log("DATA IN SELECTOR", developerId, reduxState);
+  };
+}
+
 function average(numbers) {
   return numbers.reduce((a, b) => a + b, 0) / numbers.length;
 }
