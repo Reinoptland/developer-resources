@@ -1,3 +1,21 @@
+// Parameterized Selector
+export function selectDeveloperById(developerId) {
+  return function(reduxState) {
+    // console.log("ID OF DEV", developerId);
+    // console.log(
+    //   "STATE OF STORE",
+    //   reduxState.developers.find(developer => developer.id === developerId)
+    // );
+    // how are we going to get the correct developer from this array?
+    // filter -> array -> smaller array
+    // find -> array -> one item
+    // map, filter, find, forEach, includes (only works with strings, numbers)
+    return reduxState.developers.find(
+      developer => developer.id === developerId
+    );
+  };
+}
+
 function average(numbers) {
   return numbers.reduce((a, b) => a + b, 0) / numbers.length;
 }
