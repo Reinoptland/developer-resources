@@ -1,11 +1,17 @@
-import React from "react";
-import { selectResourceById } from "../store/resources/selectors";
+import React, { useState } from "react";
+import {
+  selectResourceById,
+  selectAllResources
+} from "../store/resources/selectors";
 import { useSelector } from "react-redux";
 
 export default function ResourceDetails() {
-  const resource = useSelector(selectResourceById(5));
+  const [chosenId, setChosenId] = useState();
+  const resource = useSelector(selectResourceById(chosenId));
+  const allResources = useSelector(selectAllResources);
 
-  console.log("RESOURCE IN COMPONENT", resource);
+  //   console.log("RESOURCE IN COMPONENT", resource);
+  //   console.log("ALL", allResources);
   const details = resource ? (
     <div>
       RESOURCE DETAILS
@@ -20,5 +26,26 @@ export default function ResourceDetails() {
       </div>
     </div>
   ) : null;
-  return <div>{details}</div>;
+
+  function handleChange(event) {
+    // console.log(event.target.value);
+    setChosenId(parseInt(event.target.value));
+  }
+
+  return (
+    <div>
+      {details}
+      <select onChange={handleChange}>
+        <option defaultValue>Choose one</option>
+        {allResources.map(resource => {
+          //   console.log(resource);
+          return (
+            <option value={resource.id} key={resource.id}>
+              {resource.name}
+            </option>
+          );
+        })}
+      </select>
+    </div>
+  );
 }
