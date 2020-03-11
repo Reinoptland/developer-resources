@@ -117,6 +117,15 @@ WHAT DO WE NEED TO DO, TO MAKE A SELECT INPUT WITH DEVELOPER ID's?
   - An event handler
 - Pass the id the user selected to our selectDeveloperById (so everything is dynamic)
 
+# Feature: Add a developer
+
+WHAT DO WE NEED TO DO TO BE ABLE TO ADD A DEVELOPER?
+
+- X We need a form
+- X We need to store the state of the form (useState)
+- X When the form is submitted, dispatch an action
+- In the reducer, handle the action
+
 # Later, Day 3
 
 - Routing together with redux
