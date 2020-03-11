@@ -9,6 +9,7 @@ export default function Resource(props) {
     console.log("DELETE: ", resourceId);
     const action = deleteResource(resourceId);
     console.log(action);
+    dispatch(action);
   }
 
   return (
