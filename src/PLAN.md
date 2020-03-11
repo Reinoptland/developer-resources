@@ -96,10 +96,10 @@ STEPS:
   - X Build a selector (export it)
   - X Import the selector
   - X Use selector in component
-- gather data (console.log state)
-  - We need an id of which developer to display
-- Return data from the selector
-- Display that 1 developer
+- X gather data (console.log state)
+  - X We need an id of which developer to display
+- X Return data from the selector
+- X Display that 1 developer
 - Make the user be able choose (make the data dynamic)
   - Make a select input etc..
 
