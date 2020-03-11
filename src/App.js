@@ -12,12 +12,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ResourceForm />
-        <ResourceList />
-        {/* <DeveloperList />
-        <DeveloperForm /> */}
-        {/* <ResourceDetails />
+        {/* <ResourceForm />
+        <ResourceList /> */}
+        <DeveloperList />
         <DeveloperDetails />
+        {/* <DeveloperForm /> */}
+        {/* <ResourceDetails />
         <ResourcesListByTag /> */}
       </header>
     </div>

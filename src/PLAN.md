@@ -130,10 +130,23 @@ WHAT DO WE NEED TO DO TO BE ABLE TO ADD A DEVELOPER?
 
 WHAT DO WE NEED TO DO TO BE ABLE TO ADD A DEVELOPER?
 
-- We need a form
-- We need to store the state of the form (useState)
-- When the form is submitted, dispatch an action
-- In the reducer, handle the action
+- X We need a form
+- X We need to store the state of the form (useState)
+- X When the form is submitted, dispatch an action
+- X In the reducer, handle the action
+
+# Feature: Delete a developer
+
+WHAT DO WE NEED TO DO TO BE ABLE TO DELETE A DEVELOPER
+
+- X Data of who to delete -> id of the developer
+- X We need some UI (button or something) to delete someone
+- X Wire the UI (event listeners and handlers)
+- X Create an action
+- X Dispatch that action
+- handle action in reducer
+- ... -> delete them from the array of developers?? (what do we use)
+- Ask for confirmation?
 
 # Later, Day 3
 
