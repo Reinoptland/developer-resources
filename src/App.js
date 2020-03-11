@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import ResourcesList from "./components/ResourcesList";
+import ResourcesListByTag from "./components/ResourcesListByTag";
 import DeveloperList from "./components/DeveloperList";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <DeveloperList />
-        <ResourcesList />
+        <ResourcesListByTag />
       </header>
     </div>
   );
