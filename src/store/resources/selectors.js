@@ -1,3 +1,16 @@
+export function selectResourceById(resourceId) {
+  return function(reduxState) {
+    // console.log("Resource ID", resourceId);
+    // console.log(
+    //   "STATE",
+    //   reduxState.resources.find(resource => resource.id === resourceId)
+    // );
+    // we need 1 resource
+    // map, filter, find, includes
+    return reduxState.resources.find(resource => resource.id === resourceId);
+  };
+}
+
 export function selectAllResources(reduxState) {
   // console.log("STATE IN SELECTOR", reduxState.resources);
   // TODO: return a piece of the state
