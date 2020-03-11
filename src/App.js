@@ -6,16 +6,18 @@ import ResourceList from "./components/ResourceList";
 import DeveloperDetails from "./components/DeveloperDetails";
 import ResourceDetails from "./components/ResourceDetails";
 import DeveloperForm from "./components/DeveloperForm";
+import ResourceForm from "./components/ResourceForm";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <DeveloperList />
-        <DeveloperForm />
+        <ResourceForm />
+        <ResourceList />
+        {/* <DeveloperList />
+        <DeveloperForm /> */}
         {/* <ResourceDetails />
         <DeveloperDetails />
-        <ResourceList />
         <ResourcesListByTag /> */}
       </header>
     </div>
