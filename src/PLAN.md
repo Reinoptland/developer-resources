@@ -93,9 +93,9 @@ STEPS:
 - X Check state, do we have the data? if not hardcode it
 - X Make a component to display 1 developer
 - Get a selector to run
-  - Build a selector (export it)
-  - Import the selector
-  - Use selector in component
+  - X Build a selector (export it)
+  - X Import the selector
+  - X Use selector in component
 - gather data (console.log state)
   - We need an id of which developer to display
 - Return data from the selector
