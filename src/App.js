@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import ResourcesListByTag from "./components/ResourcesListByTag";
 import DeveloperList from "./components/DeveloperList";

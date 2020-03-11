@@ -5,13 +5,13 @@ import Resource from "./Resource";
 
 export default function ResourceList() {
   const resources = useSelector(selectAllResources);
-  console.log("RESOURCES IN COMPONENT", resources);
+  //   console.log("RESOURCES IN COMPONENT", resources);
   return (
     <div>
       RESOURCES
       <ul>
         {resources.map(resource => {
-          console.log(resource);
+          //   console.log(resource);
           return (
             <Resource
               key={resource.id}

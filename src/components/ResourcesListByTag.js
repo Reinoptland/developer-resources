@@ -4,8 +4,6 @@ import {
   selectResourcesWithTag,
   resourcesTags
 } from "../store/resources/selectors";
-
-import { selectDeveloperStatistics } from "../store/developers/selectors";
 import Resource from "./Resource";
 
 export default function ResourcesList() {
