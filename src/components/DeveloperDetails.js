@@ -9,9 +9,9 @@ export default function DeveloperDetails() {
   const [chosenId, setChosenId] = useState();
   const developer = useSelector(selectDeveloperById(chosenId));
   const allDevelopers = useSelector(selectAllDevelopers);
-  console.log("DEVELOPER IN COMPONENT", developer);
-  console.log("DEVELOPERS IN COMPONENT", allDevelopers);
-  console.log("ID USER WANTS TO SEE?", chosenId);
+  // console.log("DEVELOPER IN COMPONENT", developer);
+  // console.log("DEVELOPERS IN COMPONENT", allDevelopers);
+  // console.log("ID USER WANTS TO SEE?", chosenId);
   function handleChange(event) {
     // console.log(typeof parseInt(event.target.value));
     setChosenId(parseInt(event.target.value));
