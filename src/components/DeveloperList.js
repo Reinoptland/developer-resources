@@ -11,6 +11,12 @@ export default function DeveloperList() {
 
   function handleDelete(developerId) {
     // console.log("DELETE USER", developerId);
+    const sure = window.confirm("Are you sure?");
+
+    if (!sure) {
+      return;
+    }
+
     const action = deleteDeveloper(developerId);
     // console.log(action);
     dispatch(action);
