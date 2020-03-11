@@ -7,6 +7,8 @@ export default function(state = initialState, action) {
       return state.filter(developer => developer.id !== action.payload);
     case "ADD_DEVELOPER":
       return [...state, action.payload];
+    case "DEVELOPERS_FETCHED":
+      return [...state, ...action.payload];
     default:
       return state;
   }
