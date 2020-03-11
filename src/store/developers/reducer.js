@@ -12,6 +12,7 @@ const initialState = [
     favorites: [1, 3, 6]
   },
   {
+    id: 3,
     name: "Irene",
     website: null,
     favorites: [1, 2, 3, 6]
