@@ -1,14 +1,19 @@
 import React, { useState } from "react";
+import { addResource } from "../store/resources/actions";
+import { useDispatch } from "react-redux";
 
 export default function ResourceForm() {
   const [name, setName] = useState("");
   const [type, setType] = useState("");
   const [url, setUrl] = useState("");
+  const dispatch = useDispatch();
 
   function handleSubmit(event) {
     event.preventDefault();
 
-    console.log(name, type, url);
+    const action = addResource(name, type, url);
+    console.log(action);
+    dispatch(action); // we should get an action
   }
 
   return (
