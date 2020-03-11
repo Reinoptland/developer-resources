@@ -77,8 +77,8 @@ STEPS:
 
 # Feature: Display all resources and their websites
 
-- hardcode state
-- Create component
+- X hardcode state
+- X Create component
 - Get selector to run
   - Build a selector (export it)
   - Import the selector
